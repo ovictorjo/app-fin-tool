@@ -1,0 +1,24 @@
+<div class="form"> 
+    
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Valor</mat-label>
+        <input matInput placeholder="valor" [(ngModel)] = "request.value" >
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Descrição</mat-label>
+        <input matInput placeholder="Descrição" [(ngModel)] = "request.description">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Categoria</mat-label>
+        <input matInput placeholder="Descrição" [(ngModel)] = "request.category">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Data</mat-label>
+        <input matInput type="date" placeholder="Data" [(ngModel)] = "request.date" >
+    </mat-form-field>
+    
+    <button (click)=save() mat-fab>+</button>
+</div>

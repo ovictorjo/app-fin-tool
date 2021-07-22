@@ -1,0 +1,36 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode = "side" opened
+    fixedInViewport="true" fixedTopGap="64">
+    <mat-nav-list class="nav-list">
+        <a mat-list-item routerLink="/">
+            <i class="material-icons">
+                home
+            </i>
+            inicio
+        </a>
+        <a mat-list-item routerLink="/inputs">
+            <i class="material-icons">
+                arrow_upward
+            </i>
+            entradas
+        </a>
+        <a mat-list-item routerLink="/outs">
+            <i class="material-icons">
+                arrow_downward
+            </i>
+            saidas
+        </a>
+        <a mat-list-item>
+            <i class="material-icons">
+                exit_to_app
+            </i>
+            sair
+        </a>
+    </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
